@@ -99,15 +99,13 @@
         <div id="rose_img"><img src="rose.gif" alt="Rose_Day_img"></div>
     </div>
     <script>
-        let btndo = function () {
             let btnSelect = document.querySelector('#btn-no');
             btnSelect.addEventListener('click', () => {
-                let randNum = Math.floor(Math.random() * (400 - (-400) + 1)) + (-400);
-                let randNum3 = Math.floor(Math.random() * (200 - (-150) + 1)) + (-150);
+                let randNum = Math.floor(Math.random() * (400 - (-300) + 1)) + (-300);
+                let randNum3 = Math.floor(Math.random() * (200 - (-100) + 1)) + (-100);
                 btnSelect.style.top = `${randNum}px`;
                 btnSelect.style.right = `${randNum3}px`;
             });
-        };
 
         let btnSecSelect = document.querySelector('#btn-yes');
         btnSecSelect.addEventListener('click', () => {
@@ -125,3 +123,4 @@
 
 
 </html>
+
